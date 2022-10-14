@@ -46,7 +46,7 @@ namespace API.Controllers
         //  [Route("FindById/{id:int:min(1)}")]
 
        [Route("FindById/{id:int?}")]
-        public sub_mark MarkByID(int id = 1)
+        public sub_mark GetMarkByID(int id = 1)
         {
             marks empbal = new marks();
             empbal = obj.search(id);
